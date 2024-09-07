@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+body{
+   margin:0;
+   padding:0;
+   background-color: #fff;
+}
+main{
+    color:#0000008c;
+    margin-bottom: 60px;
+}
+.container{
+    max-width: 1024px;
+    margin:0 auto;
+}
+
+/*INICIO CSS TOPO*/
+.topo{
+    background-color:#00cad1 ;
+    width:100%;
+}
+.topo .container {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 60px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.topo-titulo{
+    font-weight:600;
+    font-size: 28px;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topo-titulo a{
+    display: flex;
+}
+.topo-logo{
+    height:60px;
+}
+
+.topo-links{
+    display: flex;
+}
+.topo-link{
+    padding:10px;
+    text-decoration: none;
+    color:#fff;
+    font-weight:600
+}
+.topo-link:hover{
+    color: #004b4c;
+}
+
+.box-navegacao-interna{
+    padding: 0 20px;
+    text-align: center;
+    
+}
+.container-navegacao-interna{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top:20px;
+    text-align: center;
+}
+
+.topo-link-interno{
+    text-decoration: none;
+    color:#000;
+    border-bottom: 2px solid  #00cad1;
+    margin: 0 10px 10px;
+    font-size: 18px;
+
+}
+.topo-link-interno:hover{
+    color: #0d6e71;
+}
+.sessao-especialidade {
+    margin-top: 40px;
+    
+  }
+
+  .container-titulo {
+    padding: 0 20px;
+  }
+
+
+  .box-tabela-especialista{
+    display: flex;
+    height:240px;
+    padding: 0 20px;
+  }
+
+  .box-tabela-especialista img{
+    width:30%;
+    height: 100%;
+  }
+  .tabela-especialistas{
+    border-spacing:0;
+    text-align: left;
+    width: 70%;
+    height: 100%;
+  }
+  .tabela-especialistas thead tr{
+    background-color: #00cad1;
+    color: #fff;
+  }
+  .tabela-especialistas tr{
+    background-color:#f1f1f1 ;
+    color: #585757;
+  font-weight: 500;
+  }
+  .tabela-especialistas tbody tr:nth-of-type(2n+1){
+    background-color: #cdcdcd;
+    border:1px solid #f1f1f1;
+  }
+ 
+  .tabela-especialistas th, .tabela-especialistas td {
+    padding:10px
+  }
+/* Fim CSS Topo */
+
+/* Início CSS Rodapé */
+
+footer{
+    background-color: #0d6e71;
+    color: #fff;
+    padding:20px;
+}
+footer .container{
+    text-align: center;
+}
+
+/* Fim CSS Rodapé */
+
+
+/*INICO RESPONSIVIDADE*/
+
+@media (max-width:768px){
+    .box-tabela-especialista img{
+        display: none;
+    }
+
+    .tabela-especialistas{
+        width:100%;
+    }
+    .tabela-especialistas{
+        height: auto;
+        justify-content: center;
+    }
+}
+@media (max-width: 425px){
+    .box-tabela-especialista{
+        padding:0;
+    }
+}

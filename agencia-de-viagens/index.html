@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
+        <meta name="description" content="A Agência de viagens encontra o hotel certo para você!">
+        <title>Agência de viagens</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap">
+        
+    </head>
+    <body>
+        <header>
+            <div class="secao-largura-limitada secao-topo">
+                <img class="img-logo-topo" src="img/local-logo.png" alt="Local" title="Local">
+                <span>Agência de Viagens</span>
+            </div>
+        </header>
+
+        <main >
+            <section class="background">
+                <div class="secao-largura-limitada secao-geral-orcamento">
+                    <div class=" container-orcamento-topo">
+                        <img src="img/aviao.png" alt="Logo" title="Logo">
+                        <h1>Solicite um orçamento</h1>
+                    </div>
+
+                    <div class="area-fomulario">
+                        <h2>Informe seus dados</h2>
+                        <form class="" method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
+                
+                            <label class="identificadores-campos" for="nome">Nome</label>
+                            <input  id="nome" type="text" name="nome" class="inputText" placeholder="Nome completo" required >
+
+                            <label class="identificadores-campos" for="email">Email</label>
+                            <input id="email" type="email" name="email" class="inputText" placeholder="Email para contato" required  >
+
+                            <label class="identificadores-campos" for="celular" >Celular</label>
+                            <input id="celular" type="tel" name="celular" class="inputText"   placeholder="(XX) XXXXX-XXXX" required >
+
+                            <div class="datas-viagem">
+                                <div class="data-ida alinhamento-caixas-data">
+                                    <label class="identificadores-campos" for="ida">Data da ida</label>
+                                    <input type="date" name="partida" id="ida" class="inputText"  >
+                                </div>
+                                <div class="data-volta alinhamento-caixas-data">
+                                    <label class="identificadores-campos" for="volta">Data da volta</label>
+                                    <input type="date" name="chegada" id="volta" class="inputText" >
+                                </div>
+                            </div>
+
+                            <div class="locais-viagem">
+                                <div class="origem alinhamento-caixas-data">
+                                    <label class="identificadores-campos" for="origem">Origem</label>
+                                    <select name="origem" id="origem"  >
+                                        <option  disabled selected >Partindo de</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="GO">Goias</option>
+                                        <option value="MA">Maranhão</option>
+                                    </select>
+                                </div>
+
+                                <div class=" destino alinhamento-caixas-data">
+                                    <label class="identificadores-campos" for="destino">Destino</label>
+                                    <select name="destino" id="destino" >
+                                        <option disabled selected >Indo para</option>
+                                        <option value="AM">Amazonas</option>
+                                        <option value="RJ">Rio de Janeiro</option>
+                                        <option value="SP">São Paulo</option>
+                                        <option value="GO">Goias</option>
+                                        <option value="MA">Maranhão</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <label class="identificadores-campos">Quarto com cama infantil?</label>
+                            <div class="quarto">
+                                <div class="grupo-opcao">
+                                    <input type="radio" name="infantil" id="check-sim" value="sim" required checked >
+                                    <label for="check-sim">Sim</label>
+                                </div>
+                                <div class="grupo-opcao">
+                                    <input type="radio" name="infantil" id="check-nao" value="nao" >
+                                    <label for="check-nao">Não</label>
+                                </div>
+                            </div>
+                            <label class="identificadores-campos">Preferências da hospedagem</label>
+                            <div class="preferencias-hospedagem">
+                                <div class="grupo-opcao">
+                                    <input type="checkbox" name="preferencias[]" id="check-piscina" value="piscina">
+                                    <label for="check-piscina">Piscina</label>
+                                </div>
+                                <div class="grupo-opcao">
+                                    <input type="checkbox" name="preferencias[]" id="check-wifi" value="wifi" >
+                                    <label for="check-wifi">WI-Fi</label>
+                                </div>
+                                <div class="grupo-opcao">
+                                    <input type="checkbox" name="preferencias[]" id="check-garagem" value="garagem">
+                                    <label for="check-garagem">Garagem</label>
+                                </div>
+                                <div class="grupo-opcao">
+                                    <input type="checkbox" name="preferencias[]"  id="check-suite" value="suite">
+                                    <label for="check-suite">suite</label>
+                                </div>
+                            </div>
+                            <button type="submit">Solicitar Orçamento</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ofertas secao-largura-limitada">
+                <h2>Ofertas</h2>
+                <h3>Com até <strong>50%</strong> de desconto.</h3>
+                
+                <div class="ofertas-imagens">
+
+                     
+                        
+                    <figure class="oferta-imagen-destaque">
+                        <img src="img/rio.jpg" alt="Rio de Janeiro" title="Rio de Janeiro">
+                        <figcaption>Rio de Janeiro</figcaption>
+                    </figure>
+                    <div class="oferta-quatro-imagens">
+                        <figure>
+                            <img src="img/manaus.jpg" alt="Manaus" title="manaus">
+                            <figcaption>Manaus</figcaption>
+                        </figure>
+                        
+                        <figure>
+                            <img src="img/niteroi.jpg" alt="Rio de Janeiro" title="Rio de Janeiro">
+                            <figcaption>Rio de Janeiro</figcaption>
+                        </figure>
+                        
+                        <figure>
+                            <img src="img/saopaulo.jpg" alt="Sao Paulo" title="Sao Paulo">
+                            <figcaption>São Paulo</figcaption>
+                        </figure>
+                       
+                        <figure>
+                            <img src="img/maranhao.jpg" alt="Maranhao" title="Maranhao">
+                            <figcaption>Maranhão</figcaption>
+                        </figure>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section class=" anuncio secao-largura-limitada">
+                <h2>Explore a Natureza</h2>
+                <h3>Viaje conosco e veja o melhor que a natureza tem a oferecer</h3>
+
+                <div class="container-ofertas-duas-imagens">
+
+                    <figure>
+                        <img src="img/lencol.jpg" alt="Lençois maranhences" title="Lençois maranhences">
+                        <div class="descricao-card-anuncio">
+                            <h3>Lençois Maranhences, Brasil</h3>
+                            <p>Ida e volta a partir de R&#36;79</p>
+                        </div>
+                    </figure>
+
+
+
+                    <figure>
+                        <img src="img/goias.jpg" alt="Cachoeira" title="Cachoeira">
+                        <div class="descricao-card-anuncio">
+                            <h3>Cachoeira Santa Bárbara, Brasil</h3>
+                            <p>Ida e volta a partir de R&#36;139</p>
+                        </div>
+                    </figure>
+                    
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container-rodape secao-largura-limitada">
+                <div class="container-infomacoes-radape">
+                    <h2>Contato</h2>
+                    <nav class="infomacoes-rodape">
+                        <div>
+                            <img src="img/local.png" alt="Local" title="Local">
+                            <span> Rio de Janeiro, RJ</span>
+                        </div>
+
+                        <div>
+                            <img src="img/telefone.png" alt="Telefone" title="Telefone">
+                            <span> (21) 99999-9999</span>
+                        </div>
+
+                        <div>
+                            <img src="img/email.png" alt="Email" title="Email">
+                            <span> Email:contato@agencia.com.br</span>
+                        </div>
+                    </nav>
+                </div>
+                <div class="container-infomacoes-radape">
+                    <h2>Nosas Redes Sociais</h2>
+                    <nav class="infomacoes-rodape">
+                        <div>
+                            <img src="img/fb.png" alt="Facebook" title="Facebook">
+                            <span> /AgenciaDeViagen</span>
+                        </div>
+
+                        <div>
+                            <img src="img/telefone.png" alt="Telefone" title="Telefone">
+                            <span> (21) 99999-9999</span>
+                        </div>
+
+                        <div>
+                            <img src="img/email.png" alt="Email" title="Email">
+                            <span> Email:contato@agencia.com.br</span>
+                        </div>
+                    </nav>
+                </div>
+
+            </div>
+        </footer>
+    </body>
+
+</html>

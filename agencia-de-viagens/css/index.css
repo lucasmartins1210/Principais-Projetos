@@ -1,0 +1,359 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Raleway;
+}
+main{
+    background:#80808029;
+    font-family: Raleway;
+}
+header{
+    width: 100%;
+    height:55px;
+    background:#fff;
+    display: flex;
+    justify-content: center;
+}
+.secao-topo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.secao-largura-limitada{
+    width: 100%;
+    max-width: 1024px;
+}
+.img-logo-topo{
+    width: 32px;
+    height: 32px;
+}
+.secao-topo span{
+    color:#5d15d1;
+    font-size:24px;
+    margin: 0 0 0 10px;
+}
+
+/*inicio main/fomulario*/
+.background{
+    width: 100%;
+    height: auto;
+    background-image: url(../img/bahia.jpg);
+    background-size: cover;
+    background-repeat:no-repeat;
+}
+
+.secao-geral-orcamento{
+    margin: 0 auto;
+    padding:50px 0;
+    width: 100%;
+    height: auto;
+}
+.container-orcamento-topo{
+    width: 100%;
+    height: 35px;
+    background: #622bb9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-orcamento-topo img{
+    width: 20px;
+    height: 20px;
+}
+.container-orcamento-topo h1{
+    font-size: 14px;
+    color: #fff;
+    margin-left: 5px;
+}
+.area-fomulario{
+    /*na largura poderia ser usado o cal()
+    EX: width: cal(100% - 50px);*/
+    width: 100%;
+    background: #fff;
+    padding: 30px 25px 20px 25px;
+    box-sizing: border-box;
+}
+
+.area-fomulario h2{
+    font-size: 22px;
+    margin-bottom:24px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+.identificadores-campos{
+    font-size: 16px;
+}
+.inputText{
+    width: 100%;
+    height: 32px;
+    margin: 10px 0;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+ select {
+    padding: 0 3px;
+    width: 100%;
+    height: 32px;
+    margin: 10px 0;
+    box-sizing: border-box;
+
+}
+.locais-viagem, .datas-viagem{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+.alinhamento-caixas-data{
+    width: calc(50% - 10px);
+}
+
+.preferencias-hospedagem, .quarto{
+    display: flex;
+    
+}
+
+.grupo-opcao{
+    display: flex;
+    width: 120px;
+}
+.grupo-opcao input {
+    width: 15px;
+}
+
+.grupo-opcao label{
+    margin: 0 0 0 8px;
+}
+
+button{
+    width: 160px;
+    height: 32px;
+    background: #5d15d1;
+    font-size:16px;
+    color: #fff;
+    border:none;
+    margin-top: 12px;
+}
+button:hover{
+    cursor:pointer;
+}
+
+.ofertas{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 32px auto 0 auto;
+}
+.ofertas h2{
+    font-size: 20px;
+    margin-bottom:10px;
+}
+.ofertas h3{
+    font-size: 16px;
+    margin-bottom:15px;
+}
+
+.ofertas-imagens{
+    width: 100%;
+    height: 375px;
+    display: flex;
+    justify-content: space-between;
+}
+.oferta-imagen-destaque {
+    position: relative;
+    width: calc(50% - 10px);
+    height: 100%;
+}
+.oferta-quatro-imagens{
+    
+    width:50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    box-sizing: border-box;
+}
+.oferta-quatro-imagens figure{
+    position: relative;
+    width: calc(50% - 10px);
+    height: calc(50% - 10px);
+}
+
+.ofertas img, .anuncio img{
+
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.anuncio{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 32px auto 0 auto;
+}
+.anuncio h2{
+    font-size: 20px;
+    margin-bottom:10px;
+}
+.anuncio h3{
+    font-size: 16px;
+    margin-bottom:15px;
+}
+
+.oferta-imagen-destaque figcaption, .oferta-quatro-imagens figcaption{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    background:rgba(0, 0, 0, 50%);
+    font-size: 17px;
+    padding: 5px 10px;
+    box-sizing:border-box ;
+}
+/*ofertas 2 imagens*/
+.container-ofertas-duas-imagens{
+    width: 100% ;
+    height: auto;
+    display: flex;
+    gap: 10px;
+    padding: 10px 0;
+    
+    
+}
+.container-ofertas-duas-imagens figure{
+    width: calc(50% - 10px);
+    height: 100%;
+}
+
+.container-ofertas-duas-imagens img{
+    object-fit:cover;
+    width: 100% ;
+    height: 100% ;
+}
+.descricao-card-anuncio{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #fff;
+}
+.descricao-card-anuncio h3{
+    font-size: 16px;
+}
+.descricao-card-anuncio p{
+    margin-top:15px;
+}
+/*RODAPE*/
+footer{
+    width: 100%;
+    background: #5d15d1;
+   
+}
+.container-rodape{
+    display:flex ;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.container-infomacoes-radape{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+.container-infomacoes-radape h2{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.infomacoes-rodape div{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+.infomacoes-rodape img{
+    width: 18px;
+    
+}
+.infomacoes-rodape div span{
+    color: #fff;
+    margin-left: 10px;
+}
+
+/*MEDIAS QUERIES*/
+
+@media only screen and (max-width:1100px){
+    .secao-largura-limitada{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:768px){
+    button{
+        width: 100%;
+    }
+    .ofertas-imagens{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+     .oferta-imagen-destaque{
+        width:100%;
+        height: 225px;
+        margin-top: 15px;
+        
+    }
+    .oferta-quatro-imagens{
+        width: 100%;
+    }
+    .oferta-quatro-imagens figure{
+        width: 100%;
+        height: 225px;
+    }
+    
+    .container-ofertas-duas-imagens{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        
+        
+    }
+    .container-ofertas-duas-imagens figure{
+        width: 100%;
+        margin-top: 15px;
+        
+    }
+    .container-rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width:540px){
+    .datas-viagem, .locais-viagem, .quarto, .preferencias-hospedagem{
+        display: flex;
+        flex-direction: column;
+    }
+    .data-ida input{
+        width: 100%;
+    }
+    .alinhamento-caixas-data{
+        width: 100%;
+    }
+    .grupo-opcao{
+        width: 100%;
+        margin: 10px 0
+    }
+
+    
+
+}
+
+
+
+
+
